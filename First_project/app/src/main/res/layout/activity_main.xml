@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_700"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5px"
+            android:text="Enter BDT amount: "
+            android:textColor="@color/white"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Type amount"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:textSize="60px"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/ConvertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:textSize="60px"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/ViewOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Output"
+        android:textStyle="bold"
+        android:textSize="60px"
+        />
+
+</LinearLayout>
